@@ -9,5 +9,5 @@ clean:
 dis: $(OBJ)
 	z88dk-dis -mz80 -x $<.map -o CRT_ORG_CODE $< | less
 
-hello: $(SRC)
+$(OBJ): $(SRC)
 	zcc +zx $< -m -o$@ -lesxdos -zorg 8192
