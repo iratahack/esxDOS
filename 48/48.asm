@@ -20,5 +20,6 @@ exit:
         xor     a                       ; Clear carry
         ret
 
+        section RODATA
 message:
-        db      "Memory banking disabled.", 0
+        db      "Memory banking disabled.", 0x0d, 0
